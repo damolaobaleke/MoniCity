@@ -1,0 +1,153 @@
+* {
+    font-family: 'Montserrat';
+    color: #4F4F4F;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f51a28;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f51a28;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #4F4F4F;
+    width: 10px;
+}
+
+.mc-sec-0 {
+    background-image: url("https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914211/Moni-city%20website/Home/Group_213_nzjrbw.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 550px;
+    height: 100vh;
+}
+
+body {
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-nav .nav-item a {
+    color: #000000;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #f51a28;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: 'DM sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: black!important;
+}
+
+h2 {
+    font-family: 'DM sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: black!important;
+}
+
+.mc-sec-0 p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+@media(min-width:700px) {
+    .mc-trd-img {
+        position: absolute;
+        width: 600px;
+    }
+    .mc-train-img {
+        position: absolute;
+        width: 220px;
+        left: 410px;
+        top: 200px;
+    }
+    .mc-rank {
+        width: 478px;
+        top: 66px;
+        left: 80px;
+        position: absolute;
+    }
+    .sec-1-h3,
+    .sec-2-h3 {
+        font-family: 'DM sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #000000!important;
+    }
+    .sec-1 p,
+    .sec-2 p,
+    .sec-3 p,
+    .sec-4 p,
+    .sec-5 p,
+    .sec-6 p {
+        line-height: 40px;
+    }
+    .sec-2-h3 {
+        line-height: 60px;
+    }
+    .sec3-asset-img {
+        width: 590px;
+        position: relative;
+        right: 80px;
+    }
+    .sec3-asset-img2 {
+        position: relative;
+        width: 290px;
+        left: 206px;
+        bottom: 280px;
+    }
+    .sch-meeting {
+        color: #000000;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .mc-inv-discount {
+        width: 300px;
+    }
+    .loan-issuance {
+        width: 440px;
+    }
+    .mc-man-sign {
+        position: absolute;
+        bottom: 116px;
+        left: 200px;
+        width: 300px;
+    }
+    .mc-people-standing {
+        position: absolute;
+        top: 175px;
+        width: 300px;
+    }
+}
+
+@media(max-width:600px) {}
+
+.sec-2 {
+    background-image: url("https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914210/Moni-city%20website/Home/Rectangle_535_ixifnt.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 52px;
+}
+
+.sec-3 {
+    background-image: url("https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914211/Moni-city%20website/Home/Ellipse_17_ez3qfl.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 440px;
+}
