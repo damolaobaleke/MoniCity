@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>MoniCity | About</title>
+    <title>MoniCity | Contact</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="shortcut icon" href="https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914214/Moni-city%20website/Home/image_1_sk52m7.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -14,13 +14,16 @@
 
     <link rel="stylesheet" href="/styles/Home/home.css">
     <link rel="stylesheet" href="/styles/About/about.css">
+    <link rel="stylesheet" href="/styles/Contact/contact.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 
     <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
     <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+
 </head>
+
 
 <body>
     <div class="mc-sec-0">
@@ -52,117 +55,102 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="mt-5">About Us</h1>
+                    <h1 class="mt-5">Contact Us</h1>
 
                     <p class="my-5"><i>"Our quest for better financing experience."</i></p>
 
-                    <p class="my-2">At MoniCity, our customers come first. We recognize that good corporate governance is key to ensuring and retaining the trust and confidence of our stakeholders.</p>
 
-                    <p class="my-2"> We strive to deliver a profitable and sustainable economic growth by helping customers to achieve their business objectives.</p>
                 </div>
 
                 <div class="col-md-6">
-                    <img class="mc-rank" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1613485389/Moni-city%20website/Home/Rank_Projects_ncot9w.svg" alt="">
-                    <img class="mc-train-img" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914217/Moni-city%20website/Home/cardBg-1_1_l96v9h.svg" alt="">
-                    <img class="mc-trd-img" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914213/Moni-city%20website/Home/Group_211_xcspvl.svg" alt="" srcset="">
+                    <div id="map" class="mb-3">
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="sec-2">
-        <div class="container">
-            <div class="row mt-5 justify-content-center">
-                <div class="col-md-8">
-                    <h2 class="text-center my-2">Our Mission</h2>
-                    <p class="text-center">To be the leader in all worthy causes.</p>
-                </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2 class="mt-3">
+                    How can we help you ?
+                </h2>
+
+                <p class="py-5">If you would like to send us a message or you have any complaint about our services, please fill out the short form and we’ll reply as soon as possible.</p>
+
             </div>
 
-            <div class="row mt-5 justify-content-center">
-                <div class="col-md-8">
-                    <h2 class="text-center my-2">Our Vision</h2>
-                    <p class="text-center">To build the MoniCity brand into a reputable financial institution within the financial services Industry for the benefits of our customers and other stakeholders.</p>
-                </div>
+            <div class="col-md-6">
+                <form class="" action="" method="post">
+                    <label for="">Name</label>
+                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[name]" id="" placeholder="name">
+
+                    <label for="">Email</label>
+                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[email]" id="" placeholder="email">
+
+                    <label for="">Purpose</label>
+                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[purpose]" id="" placeholder="purpose">
+
+                    <label for="">Message</label>
+                    <textarea class="contact-input form-control" name="contact[message]" id="" cols="30" rows="10" placeholder="message"></textarea>
+
+                    <button id="submit" type="submit" class="mt-4 mx-3 btn btn-danger rounded-pill py-2 px-2 justify-content-center">Submit</button>
+                </form>
             </div>
+        </div>
 
-            <div class="row mt-5 justify-content-center">
-                <div class="col-md-8">
-                    <h2 class="text-center my-2">Our Team</h2>
-                    <p class="text-center py-2">Our team of Professionals render advisory services for ease of business operations.</p>
-                    <p class="text-center py-2">They are dedicated team across key sectors of the economy.</p>
-                    <p class="text-center py-2">We understand the unique financial needs of our clients and are committed to providing them with competitive and top-notch financial services.</p>
-                </div>
-            </div>
-
-
-            <div class="row mt-5 justify-content-center">
-                <div class="col-md-10">
-                    <div class="card about-card">
+        <div class="row mb-5 pb-5">
+            <div class="col-md-4">
+                <a href="#" style="text-decoration: none;">
+                    <div class="card contact-card">
                         <div class="card-body">
-                            <h5 class="text-center my-3">Subscribe to our news letter</h1>
-                                <form class="d-flex justify-content-center" action="/about" method="post">
-
-                                    <input id="email-input" class="form-control rounded-pill px-3" type="text" placeholder="email address" name="email">
-                                    <input id="submitBtn" class="mx-3 btn btn-danger rounded-pill py-2 px-2" data-micron="tada" type="submit" value="Subscribe">
-                                </form>
+                            <p class="mc-city py-2">Lagos</p>
+                            <p class="text-center py-2">49A Chris Maduike street, Lekki,Lagos.</p>
+                            <p class="text-center py-2">01 4540104</p>
                         </div>
                     </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <p class="mc-city py-2">Abuja</p>
+                        <p class="text-center py-2">19, Magaji Ma’azu street, Katampe Extension, FCT, Abuja</p>
+                        <p class="text-center py-2">08035277007</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card contact-card">
+                    <div class="card-body">
+                        <p class="mc-city py-2">Port-Harcourt</p>
+                        <p class="text-center py-2">13, Mini Ezekwu street, Rumuogba, Port-Harcourt.</p>
+                        <p class="text-center py-2">07046175496</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-10">
+                <div class="card about-card">
+                    <div class="card-body">
+                        <h5 class="text-center my-3">Subscribe to our news letter</h1>
+                            <form class="d-flex justify-content-center" action="/about" method="post">
+
+                                <input id="email-input" class="form-control rounded-pill px-3" type="text" placeholder="email address" name="email">
+                                <input id="submitBtn" class="mx-3 btn btn-danger rounded-pill py-2 px-2" data-micron="tada" type="submit" value="Subscribe">
+                            </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-
-        </div>
-    </div>
-
-
-    <!--What Clients are saying-->
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h2 class="text-center mt-5">What clients are saying</h2>
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card">
-
-                    <div class="card-body">
-                        <p>‘’ I eventually found my financial services partner after years of frustration. At MoniCity, Teamwork, Integrity, Excellence and Professionalism are unparalleled’’</p>
-                    </div>
-
-                    <p class="card-title my-3 text-center">Kingsley Onwubiko</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p>‘’I spent years with some other financial institutions thinking that was all rendering financial services was supposed to be, until I switched to MoniCity. I then realized what financial services really entails. The service quality
-                            and professionalism is unmatched. </p>
-                        <p>They understand me, my business and we are partners in progress ‘’</p>
-                    </div>
-
-                    <p class="card-title my-3 text-center">Temi Adesogan</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <p>‘’ I have never met any financial services provider who is able to provide services with expertise that your business needs to thrive, apart from MoniCity ‘’</p>
-                    </div>
-
-                    <p class="card-title my-3 text-center">Musa Abdullahi</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer class="footer py-5 mt-5">
         <div class="container">
@@ -201,3 +189,34 @@
 </body>
 
 </html>
+
+<script>
+    function initMap() {
+        let moniCityHq = {
+            lat: 6.44055,
+            lng: 3.46017
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: moniCityHq
+        });
+
+        // The marker, positioned.
+        var marker = new google.maps.Marker({
+            position: moniCityHq,
+            map: map
+        });
+    }
+
+    // let cards = document.querySelectorAll('.contact-card');
+    // cards.forEach((card) => {
+    //     card.addEventListener('mouseover', () => {
+    //         card.classList.add('hover-contact')
+    //     })
+    // })
+</script>
+
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2z2s4wuX10IVniLlFtfCjxrOE3ZQSWk8&callback=initMap"></script>

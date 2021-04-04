@@ -30,18 +30,19 @@ app.use(function(req, res, next) {
 //Routes declaration
 let homeRoute = require('./routes/homeRoute')
 let aboutRoute = require("./routes/aboutRoute")
+let contactRoute = require('./routes/contactRoute')
 
 
 //
 app.use(homeRoute)
 app.use(aboutRoute)
-
+app.use(contactRoute)
 
 app.use((req, res) => {
-    res.status(400).send("Error Page") // render()
+    res.status(400).send("Error Page or Page Not Found") // render()
 })
 
 
-app.listen(3000, () => {
-    console.log("monicity listening on 3000")
+app.listen(3001, () => {
+    console.log("monicity listening on 3001")
 })

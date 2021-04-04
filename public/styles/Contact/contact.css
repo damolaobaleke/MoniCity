@@ -1,0 +1,53 @@
+.contact-input,
+textarea {
+    background: #E5E5E5;
+    border-radius: 10px;
+    border: 0px;
+    height: 60px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mc-city {
+    color: #EF3341;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+#submit {
+    width: 70%;
+    position: absolute;
+    left: 70px;
+}
+
+.contact-card {
+    margin-top: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 100px rgba(255, 83, 83, 0.2);
+    height: 350px;
+}
+
+.contact-card p:nth-child(3) {
+    color: black;
+    font-weight: bold;
+}
+
+.contact-card :hover {
+    transition: 3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transform: translateZ(4px)
+}
+
+#map {
+    height: 550px;
+    width: 550px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}

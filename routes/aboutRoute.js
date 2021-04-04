@@ -5,5 +5,7 @@ let { aboutController } = require("../controller/aboutController")
 
 router.get("/about", aboutController)
 
+//router.post("/about")
+
 
 module.exports = router

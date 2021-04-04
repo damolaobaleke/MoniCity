@@ -40,6 +40,9 @@ body {
 .navbar-nav .nav-item a:hover {
     color: #f51a28;
     font-weight: 600;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 h1 {
@@ -150,4 +153,37 @@ h2 {
     background-position: left;
     background-repeat: no-repeat;
     background-size: 440px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+.card-title {
+    color: #000000;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.footer {
+    background-color: #79828B;
+}
+
+.footer h3 {
+    color: white;
+    font-weight: 900;
+}
+
+.footer p {
+    color: white;
+}
+
+.info {
+    color: #FFAB1A!important;
+}
+
+.copy-right {
+    font-size: 14px;
 }
