@@ -16,6 +16,14 @@ app.use(require('express-session')({
     saveUninitialized: false
 }))
 
+//firebase admin init
+let admin = require('firebase-admin');
+const serviceAccount = require('./utils/monicity-72dda-firebase-adminsdk-xa2mn-5ea5d52f20.json');
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+});
+
 //Flash messages -using flash requires sessions
 app.use(flash())
 
@@ -43,6 +51,6 @@ app.use((req, res) => {
 })
 
 
-app.listen(3001, () => {
+app.listen(3002, () => {
     console.log("monicity listening on 3001")
 })

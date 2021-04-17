@@ -20,34 +20,64 @@ label {
     text-align: center;
 }
 
-#submit {
-    width: 70%;
-    position: absolute;
-    left: 70px;
+@media(min-width:700px) {
+    #submit {
+        width: 70%;
+        position: relative;
+        left: 70px;
+    }
+    .contact-card {
+        margin-top: 200px;
+        background: #FFFFFF;
+        box-shadow: 0px 100px 100px rgba(255, 83, 83, 0.2);
+        height: 350px;
+    }
+    .contact-card p:nth-child(3),
+    .contact-card p:nth-child(4) {
+        color: black;
+        font-weight: bold;
+    }
+    .contact-card :hover {
+        transition: 3s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transform: translateZ(4px)
+    }
+    #map {
+        height: 550px;
+        width: 550px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    }
 }
 
-.contact-card {
-    margin-top: 200px;
-    background: #FFFFFF;
-    box-shadow: 0px 100px 100px rgba(255, 83, 83, 0.2);
-    height: 350px;
-}
-
-.contact-card p:nth-child(3) {
-    color: black;
-    font-weight: bold;
-}
-
-.contact-card :hover {
-    transition: 3s;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transform: translateZ(4px)
-}
-
-#map {
-    height: 550px;
-    width: 550px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+@media(max-width:600px) {
+    #submit {
+        width: 70%;
+        position: absolute;
+        left: 34px;
+    }
+    .contact-card {
+        margin-top: 200px;
+        background: #FFFFFF;
+        box-shadow: 0px 100px 100px rgba(255, 83, 83, 0.2);
+        height: 350px;
+    }
+    .contact-card p:nth-child(3),
+    .contact-card p:nth-child(4) {
+        color: black;
+        font-weight: bold;
+    }
+    .contact-card :hover {
+        transition: 3s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transform: translateZ(4px)
+    }
+    #map {
+        height: 350px;
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    }
 }

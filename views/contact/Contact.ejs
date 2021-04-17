@@ -38,20 +38,46 @@
                 <div class="collapse navbar-collapse" id="navlinks">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item mx-4">
-                            <a style="margin-left: 9rem;" class="py-2 pl-4 nav-link active" href="/">Home</a>
+                            <a style="margin-left: 9rem;" class="home-navlink py-md-2 pl-md-4 nav-link active" href="/">Home</a>
                         </li>
 
                         <li class="nav-item mx-4">
-                            <a class="py-2 px-2 nav-link" data-micron="bounce" href="/about">About</a>
+                            <a class="py-md-2 px-md-2 nav-link" data-micron="bounce" href="/about">About</a>
                         </li>
 
                         <li class="nav-item mx-4">
-                            <a class="py-2 px-2 nav-link" href="/contact">Contact Us</a>
+                            <a class="py-md-2 px-md-2 nav-link" href="/contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
 
             </nav>
+
+
+            <!--Flash(put in header partials)-->
+            <div class="container">
+                <!--if theres anything in the error array-->
+                <%if(errorMessage && errorMessage.length > 0){%>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="alert alert-danger mt-5" role="alert">
+                                <%=errorMessage%>
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>
+                        <%if(successMessage && successMessage.length > 0){%>
+                            <div class="row mt-1" style="">
+                                <div class="col-md-4">
+                                    <div class="alert alert-success text-center mt-5" role="alert">
+                                        <%=successMessage%>
+                                    </div>
+                                </div>
+                            </div>
+                            <%}%>
+            </div>
+            <!--Flash(put in header partials)-->
+
 
             <div class="row">
                 <div class="col-md-6">
@@ -83,20 +109,20 @@
             </div>
 
             <div class="col-md-6">
-                <form class="" action="" method="post">
+                <form class="" action="/contact" method="POST">
                     <label for="">Name</label>
-                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[name]" id="" placeholder="name">
+                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[name]" id="" placeholder="name" required>
 
                     <label for="">Email</label>
-                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[email]" id="" placeholder="email">
+                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[email]" id="" placeholder="email" required>
 
                     <label for="">Purpose</label>
-                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[purpose]" id="" placeholder="purpose">
+                    <input class="contact-input form-control py-3 my-2" type="text" name="contact[purpose]" id="" placeholder="purpose" required>
 
                     <label for="">Message</label>
-                    <textarea class="contact-input form-control" name="contact[message]" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <textarea class="contact-input form-control" name="contact[message]" id="" cols="30" rows="10" placeholder="message" required></textarea>
 
-                    <button id="submit" type="submit" class="mt-4 mx-3 btn btn-danger rounded-pill py-2 px-2 justify-content-center">Submit</button>
+                    <button id="submit" class="mt-4 mx-3 btn btn-danger rounded-pill py-2 px-2 justify-content-center" type="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -108,7 +134,8 @@
                         <div class="card-body">
                             <p class="mc-city py-2">Lagos</p>
                             <p class="text-center py-2">49A Chris Maduike street, Lekki,Lagos.</p>
-                            <p class="text-center py-2">01 4540104</p>
+                            <p class="text-center py-2">08033090002</p>
+                            <p class="text-center">01 4540104</p>
                         </div>
                     </div>
                 </a>
@@ -119,7 +146,8 @@
                     <div class="card-body">
                         <p class="mc-city py-2">Abuja</p>
                         <p class="text-center py-2">19, Magaji Ma’azu street, Katampe Extension, FCT, Abuja</p>
-                        <p class="text-center py-2">08035277007</p>
+                        <p class="text-center py-2">08033090002</p>
+                        <p class="text-center">08035277007</p>
                     </div>
                 </div>
             </div>
@@ -128,8 +156,9 @@
                 <div class="card contact-card">
                     <div class="card-body">
                         <p class="mc-city py-2">Port-Harcourt</p>
-                        <p class="text-center py-2">13, Mini Ezekwu street, Rumuogba, Port-Harcourt.</p>
-                        <p class="text-center py-2">07046175496</p>
+                        <p class="text-center">13, Mini Ezekwu street, Rumuogba, Port-Harcourt.</p>
+                        <p class="text-center py-2">08033090002</p>
+                        <p class="text-center">07046175496</p>
                     </div>
                 </div>
             </div>
@@ -198,7 +227,7 @@
         };
 
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
+            zoom: 17,
             center: moniCityHq
         });
 

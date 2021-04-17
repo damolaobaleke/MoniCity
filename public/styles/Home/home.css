@@ -112,7 +112,7 @@ h2 {
         position: relative;
         width: 290px;
         left: 206px;
-        bottom: 280px;
+        bottom: 430px;
     }
     .sch-meeting {
         color: #000000;
@@ -138,7 +138,39 @@ h2 {
     }
 }
 
-@media(max-width:600px) {}
+@media(max-width:600px) {
+    .mc-trd-img {
+        position: absolute;
+        width: 103%;
+    }
+    .mc-train-img {
+        display: none;
+    }
+    .mc-rank {
+        display: none;
+    }
+    .sec3-asset-img {
+        width: 290px;
+        position: relative;
+        right: 80px;
+        display: none;
+    }
+    .sec3-asset-img2 {
+        position: relative;
+        width: 240px;
+        left: 46px;
+        bottom: 65px;
+    }
+    .home-navlink {
+        margin-left: 0rem!important;
+    }
+    .loan-issuance {
+        width: 340px;
+    }
+    .mc-man-sign {
+        display: none!important;
+    }
+}
 
 .sec-2 {
     background-image: url("https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914210/Moni-city%20website/Home/Rectangle_535_ixifnt.svg");

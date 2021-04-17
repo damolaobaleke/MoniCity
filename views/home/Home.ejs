@@ -34,20 +34,45 @@
                 <div class="collapse navbar-collapse" id="navlinks">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item mx-4">
-                            <a style="margin-left: 9rem;" class="py-2 pl-4 nav-link active" href="/">Home</a>
+                            <a style="margin-left: 9rem;" class="home-navlink py-md-2 pl-md-4 nav-link active" href="/">Home</a>
                         </li>
 
                         <li class="nav-item mx-4">
-                            <a class="py-2 px-2 nav-link" data-micron="bounce" href="/about">About</a>
+                            <a class="py-md-2 px-md-2 nav-link" data-micron="bounce" href="/about">About</a>
                         </li>
 
                         <li class="nav-item mx-4">
-                            <a class="py-2 px-2 nav-link" href="/contact">Contact Us</a>
+                            <a class="py-md-2 px-md-2 nav-link" href="/contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
 
             </nav>
+
+            <!--Flash(put in header partials)-->
+            <div class="container">
+                <!--if theres anything in the error array-->
+                <%if(errorMessage && errorMessage.length > 0){%>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="alert alert-danger mt-5" role="alert">
+                                <%=errorMessage%>
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>
+                        <%if(successMessage && successMessage.length > 0){%>
+                            <div class="row mt-1" style="">
+                                <div class="col-md-4">
+                                    <div class="alert alert-success text-center mt-5" role="alert">
+                                        <%=successMessage%>
+                                    </div>
+                                </div>
+                            </div>
+                            <%}%>
+            </div>
+            <!--Flash(put in header partials)-->
+
 
             <div class="row">
                 <div class="col-md-6">
@@ -112,7 +137,7 @@
 
                 <div class="col-md-6">
                     <h3 class="sec-2-h3 ml-md-3">Local Purchasing Order<br>(LPO) Financing</h3>
-                    <p class="ml-md-3">We create loans for your business to fiancé your LPO for the supply of materials or execution of specific supply contracts from reputable organizations.</p>
+                    <p class="ml-md-3">We create loans for your business to finance your LPO for the supply of materials or execution of specific supply contracts from reputable organizations.</p>
                     <a href="tel:08033090002">
                         <p class="sch-meeting ml-md-3">Schedule a meeting <img src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1613503873/Moni-city%20website/Home/Path_372_gvyx42.svg" alt=""></p>
                     </a>
@@ -121,15 +146,15 @@
 
             <div class="row mt-5" style="padding-bottom: 6rem;">
                 <div class="col-md-6">
-                    <h3 class="sec-2-h3">Receivable Financing</h3>
-                    <p>Get access to specialized bridge finance on future cash flows. It is a means of short- term funding that a business can draw on using its receivables. It is useful to bridge cash flow mismatch.</p>
+                    <h3 class="sec-2-h3 order-2 order-md-1">Receivable Financing</h3>
+                    <p class="order-2 order-md-1">Get access to specialized bridge finance on future cash flows. It is a means of short- term funding that a business can draw on using its receivables. It is useful to bridge cash flow mismatch.</p>
                     <a href="tel:08033090002">
                         <p class="sch-meeting">Schedule a meeting <img src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1613503873/Moni-city%20website/Home/Path_372_gvyx42.svg" alt=""></p>
                     </a>
                 </div>
 
                 <div class="col-md-6">
-                    <img class="mx-auto d-block" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914215/Moni-city%20website/Home/bg_1_qriir2.svg" alt="">
+                    <img class="mx-auto d-block order-md-2 order-1" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914215/Moni-city%20website/Home/bg_1_qriir2.svg" alt="">
                 </div>
             </div>
         </div>
@@ -139,8 +164,10 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <img class="sec3-asset-img" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914216/Moni-city%20website/Home/Group_gzsgtd.svg" alt="">
-                    <img class="sec3-asset-img2" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1613499849/Moni-city%20website/Home/cardBg_ycvhhc.svg" alt="">
+                    <div class="d-flex">
+                        <img class="sec3-asset-img order-md-1 order-2" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1612914216/Moni-city%20website/Home/Group_gzsgtd.svg" alt="">
+                        <img class="sec3-asset-img2 order-md-2 order-1" src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1613499849/Moni-city%20website/Home/cardBg_ycvhhc.svg" alt="">
+                    </div>
                 </div>
 
                 <div class="col-md-6">
@@ -160,7 +187,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3 class="sec-2-h3">Invoice discounting</h3>
-                    <p>Providing access to funding for the acquisition of assets for business needs. We provide finance or sale and lease back to support your acquisition of assets or equipment.
+                    <p> Get access to quick cash flow solution to finance your business needs. You can draw money against your invoices raised before your contract employers pay you for services rendered.
                     </p>
                     <a href="tel:08033090002">
                         <p class="sch-meeting">Schedule a meeting <img src="https://res.cloudinary.com/www-moni-city-com/image/upload/v1613503873/Moni-city%20website/Home/Path_372_gvyx42.svg" alt=""></p>
@@ -231,7 +258,7 @@
 
         <div class="row mt-5">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card my-1 my-md-0">
 
                     <div class="card-body">
                         <p>‘’ I eventually found my financial services partner after years of frustration. At MoniCity, Teamwork, Integrity, Excellence and Professionalism are unparalleled’’</p>
@@ -242,7 +269,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card">
+                <div class="card my-1 my-md-0">
                     <div class="card-body">
                         <p>‘’I spent years with some other financial institutions thinking that was all rendering financial services was supposed to be, until I switched to MoniCity. I then realized what financial services really entails. The service quality
                             and professionalism is unmatched. </p>
@@ -254,7 +281,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card">
+                <div class="card my-1 my-md-0">
                     <div class="card-body">
                         <p>‘’ I have never met any financial services provider who is able to provide services with expertise that your business needs to thrive, apart from MoniCity ‘’</p>
                     </div>
@@ -299,6 +326,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a6f7970f75.js" crossorigin="anonymous"></script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB7m_H48qqNCZKimwUDbmYYvXphrKaH0EA",
+            authDomain: "monicity-72dda.firebaseapp.com",
+            projectId: "monicity-72dda",
+            storageBucket: "monicity-72dda.appspot.com",
+            messagingSenderId: "424596398860",
+            appId: "1:424596398860:web:013e11eb80400d07561f29",
+            measurementId: "G-LPN3WM5JH2"
+        };
+        // Initialize Firebase
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </body>
 
 </html>

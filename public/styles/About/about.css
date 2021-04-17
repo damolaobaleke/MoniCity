@@ -1,25 +1,39 @@
-.about-card {
-    height: 320px;
+@media(min-width:900px) {
+    .about-card {
+        height: 320px;
+    }
+    h5 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #1E1C24;
+    }
+    #email-input {
+        border: 2px solid #D9D7D7;
+        width: 30%;
+        height: 65px;
+    }
+    #submitBtn {
+        width: 30%;
+    }
+    form {
+        margin-top: 90px;
+    }
 }
 
-h5 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    color: #1E1C24;
-}
-
-#email-input {
-    border: 2px solid #D9D7D7;
-    width: 30%;
-    height: 65px;
-}
-
-#submitBtn {
-    width: 30%;
-}
-
-form {
-    margin-top: 90px;
+@media(max-width:600px) {
+    h5 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 42px;
+        color: #1E1C24;
+    }
+    p {
+        color: black;
+    }
+    .our-mission {
+        margin-top: 85px;
+    }
 }
